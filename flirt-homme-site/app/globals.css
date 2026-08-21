@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #121110;
+  --bone: #EFEAE0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bone);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible keyboard focus ring, on both light and dark sections */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #B8923F;
+  outline-offset: 3px;
+}
+
+.container-px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-px {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-px {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.hairline {
+  border-color: #CFC6B4;
+}
+
+.hairline-dark {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Swing tag hole */
+.tag-hole {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: transparent;
+  border: 1.5px solid currentColor;
+}
