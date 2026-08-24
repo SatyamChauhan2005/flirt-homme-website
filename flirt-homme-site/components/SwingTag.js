@@ -22,7 +22,7 @@ export default function SwingTag({
         }}
       >
         <span className={`tag-hole ${isDark ? "text-bone/50" : "text-ink/40"} ml-1 shrink-0`} />
-        <span className="font-mono text-[11px] tracking-widest2 uppercase leading-none">
+        <span className="font-mono text-[11px] tracking-widest uppercase leading-none">
           {code && <span className="opacity-60 mr-2">{code}</span>}
           {label}
         </span>
