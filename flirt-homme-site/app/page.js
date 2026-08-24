@@ -87,16 +87,16 @@ export default function Home() {
       </section>
 
       {/* ABOUT TEASER */}
-      <section className="bg-ink text-bone">
+      <section className="bg-bone">
         <div className="container-px py-20 md:py-28 grid md:grid-cols-[1.2fr_1fr] gap-12 md:gap-20">
           <div>
             <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-5">
               About the Label
             </p>
-            <h2 className="font-display text-3xl md:text-4xl leading-snug max-w-md">
+            <h2 className="font-display text-3xl md:text-4xl leading-snug max-w-md text-ink">
               A manufacturing house first. A shirt label because of it.
             </h2>
-            <p className="mt-6 text-bone/70 leading-relaxed max-w-md">
+            <p className="mt-6 text-ink/70 leading-relaxed max-w-md">
               Avi Couture Private Limited builds garments for a living —
               FLIRT HOMME is where that manufacturing discipline shows up as a
               finished shirt. Every piece that carries the tag has gone
@@ -106,35 +106,35 @@ export default function Home() {
             </p>
             <Link
               href="/about"
-              className="inline-block mt-6 font-mono text-[11px] tracking-widest2 uppercase border-b border-bone pb-1 hover:text-brass hover:border-brass transition-colors"
+              className="inline-block mt-6 font-mono text-[11px] tracking-widest2 uppercase border-b border-ink pb-1 hover:text-brass hover:border-brass transition-colors text-ink"
             >
               Read the Full Story →
             </Link>
           </div>
 
           <div className="flex flex-col gap-4 justify-center">
-            <div className="flex items-center justify-between border-b hairline-dark pb-4">
-              <span className="font-mono text-xs tracking-widest2 uppercase text-bone/50">Based In</span>
-              <span className="font-display text-lg">New Delhi, India</span>
+            <div className="flex items-center justify-between border-b hairline pb-4">
+              <span className="font-mono text-xs tracking-widest2 uppercase text-ink/50">Based In</span>
+              <span className="font-display text-lg text-ink">New Delhi, India</span>
             </div>
-            <div className="flex items-center justify-between border-b hairline-dark pb-4">
-              <span className="font-mono text-xs tracking-widest2 uppercase text-bone/50">Product Lines</span>
-              <span className="font-display text-lg">4 Categories</span>
+            <div className="flex items-center justify-between border-b hairline pb-4">
+              <span className="font-mono text-xs tracking-widest2 uppercase text-ink/50">Product Lines</span>
+              <span className="font-display text-lg text-ink">4 Categories</span>
             </div>
-            <div className="flex items-center justify-between border-b hairline-dark pb-4">
-              <span className="font-mono text-xs tracking-widest2 uppercase text-bone/50">Order Type</span>
-              <span className="font-display text-lg">Retail &amp; Bulk</span>
+            <div className="flex items-center justify-between border-b hairline pb-4">
+              <span className="font-mono text-xs tracking-widest2 uppercase text-ink/50">Order Type</span>
+              <span className="font-display text-lg text-ink">Retail &amp; Bulk</span>
             </div>
             <div className="flex items-center justify-between pb-2">
-              <span className="font-mono text-xs tracking-widest2 uppercase text-bone/50">Label</span>
-              <span className="font-display text-lg">FLIRT HOMME</span>
+              <span className="font-mono text-xs tracking-widest2 uppercase text-ink/50">Label</span>
+              <span className="font-display text-lg text-ink">FLIRT HOMME</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* CATEGORY GRID */}
-      <section className="bg-ink text-bone">
+      <section className="bg-ink third-section">
         <div className="container-px py-20 md:py-28">
           <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
             <h2 className="font-display text-3xl md:text-4xl">What We Cut</h2>
@@ -175,21 +175,21 @@ export default function Home() {
       </section>
 
       {/* PROCESS */}
-      <section className="bg-ink text-bone">
+      <section className="bg-bone">
         <div className="container-px py-20 md:py-28">
           <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-5">
             How a Shirt Gets Made Here
           </p>
-          <h2 className="font-display text-3xl md:text-4xl max-w-lg mb-14">
+          <h2 className="font-display text-3xl md:text-4xl max-w-lg mb-14 text-ink">
             From fabric roll to folded shirt.
           </h2>
 
           <div className="grid md:grid-cols-3 gap-x-10 gap-y-12">
             {PROCESS.map((s) => (
-              <div key={s.n} className="border-t hairline-dark pt-5">
+              <div key={s.n} className="border-t hairline pt-5">
                 <span className="font-mono text-3xl text-brass">{s.n}</span>
-                <h3 className="font-display text-xl mt-3 mb-2">{s.t}</h3>
-                <p className="text-sm text-bone/60 leading-relaxed">{s.d}</p>
+                <h3 className="font-display text-xl mt-3 mb-2 text-ink">{s.t}</h3>
+                <p className="text-sm text-ink/60 leading-relaxed">{s.d}</p>
               </div>
             ))}
           </div>

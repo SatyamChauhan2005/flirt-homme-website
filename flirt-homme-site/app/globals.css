@@ -75,48 +75,54 @@ textarea:focus-visible {
 }
 
 /*
-  Overrides for the hero section only (kept intentionally as-is per request).
-  - Headings (font-display / h1) inside hero: #0C5961
-  - The emphasized "decision." (uses text-brass in markup): #EB002A
-  - All other text inside hero should be black: #000000
+  Overrides for page containers that use the "bg-bone" utility class.
+  - Headings (font-display / h1) inside bone containers: #0C5961
+  - The emphasized "decision." (uses text-brass in markup) should be: #EB002A
+  - All other text inside bone containers should be black: #000000
+  These rules use increased specificity and !important to override Tailwind utilities.
 */
 
-.hero-legacy {
+.bg-bone,
+.bg-bone-card {
   background-color: var(--bone) !important;
-  color: #000000 !important;
+  color: #000000 !important; /* default text color inside bone sections */
 }
 
-.hero-legacy h1,
-.hero-legacy .font-display {
+/* Headings (display font / h1) inside bone sections */
+.bg-bone h1,
+.bg-bone .font-display {
   color: #0C5961 !important;
 }
 
-.hero-legacy em,
-.hero-legacy .text-brass {
+/* The word "decision." in the hero uses text-brass — override it */
+.bg-bone em,
+.bg-bone .text-brass {
   color: #EB002A !important;
 }
 
-.hero-legacy p,
-.hero-legacy span,
-.hero-legacy a,
-.hero-legacy li,
-.hero-legacy label,
-.hero-legacy .font-mono,
-.hero-legacy .text-ink,
-.hero-legacy .text-bone,
-.hero-legacy .text-white {
+/* Force other commonly used text utilities to be black inside bone areas */
+.bg-bone p,
+.bg-bone span,
+.bg-bone a,
+.bg-bone li,
+.bg-bone label,
+.bg-bone .font-mono,
+.bg-bone .text-ink,
+.bg-bone .text-bone,
+.bg-bone .text-white {
   color: #000000 !important;
 }
 
-.hero-legacy .font-mono.text-\[11px\],
-.hero-legacy .font-mono.text-xs,
-.hero-legacy .font-mono.text-\[10px\] {
+/* Make sure small metadata / mono labels are readable */
+.bg-bone .font-mono.text-[11px],
+.bg-bone .font-mono.text-xs,
+.bg-bone .font-mono.text-[10px] {
   color: #000000 !important;
 }
 
-/* Exception: the dark swing-tag chip inside the hero needs light text,
-   not the black forced above (this restores its own bg-ink/text-bone). */
-.hero-legacy .bg-ink,
-.hero-legacy .bg-ink * {
-  color: var(--bone) !important;
+/*
+  New: third-section — target the third container (category grid) text color
+*/
+.third-section {
+  color: #420057 !important;
 }
