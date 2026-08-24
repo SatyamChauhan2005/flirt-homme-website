@@ -10,7 +10,7 @@ export default function Swatch({ tone = "bone", label, className = "" }) {
     <div
       className={`relative flex items-center justify-center overflow-hidden ${tones[tone]} ${className}`}
     >
-      <span className="font-mono text-[10px] tracking-widest2 uppercase">
+      <span className="font-mono text-[10px] tracking-widest uppercase">
         {label}
       </span>
       <span className="absolute inset-3 border border-current opacity-20 pointer-events-none" />
