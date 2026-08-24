@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#21575C] text-[#FFFFFF] border-t border-white/15">
+    <footer className="bg-[#21575C] text-white border-t border-white/15">
       <div className="container-px py-16 grid gap-12 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
         <div>
           <Image
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-brass mb-4">
             Navigate
           </p>
           <ul className="space-y-2.5 text-sm">
@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-brass mb-4">
             Lines
           </p>
           <ul className="space-y-2.5 text-sm">
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-brass mb-4">
             Reach Us
           </p>
           <ul className="space-y-2.5 text-sm">
@@ -71,7 +71,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/15">
-        <div className="container-px py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-mono tracking-widest2 uppercase text-white font-semibold">
+        <div className="container-px py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-mono tracking-widest uppercase text-white font-semibold">
           {/* MARK: Important copyright and branding */}
           <span>&copy; {new Date().getFullYear()} Avi Couture Private Limited</span>
           <span>FLIRT HOMME — Designed &amp; Manufactured in Delhi, India</span>
