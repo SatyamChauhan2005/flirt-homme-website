@@ -33,10 +33,10 @@ export default function Contact() {
                 Email
               </p>
               <a
-                href="mailto:mis@avicouture.com"
+                href="mailto:sales@avicouture.com"
                 className="font-display text-2xl hover:text-brass transition-colors"
               >
-                mis@avicouture.com
+                sales@avicouture.com
               </a>
             </div>
 
@@ -45,10 +45,10 @@ export default function Contact() {
                 Phone
               </p>
               <a
-                href="tel:+91 81715 24245"
+                href="tel:+91 82877 79400"
                 className="font-display text-2xl hover:text-brass transition-colors"
               >
-                +91 81715 24245
+                +91 82877 79400
               </a>
               <p className="text-xs text-ink/45 mt-1 font-mono">
                 Replace with your direct line before launch
