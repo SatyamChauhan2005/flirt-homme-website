@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --ink: #121110;
-  --bone: #EFEAE0;
+  --ink: #16233A;
+  --bone: #ECE6D8;
 }
 
 * {
@@ -34,7 +34,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #B8923F;
+  outline: 2px solid #B5652D;
   outline-offset: 3px;
 }
 
