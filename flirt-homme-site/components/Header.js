@@ -18,7 +18,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-<header className="sticky top-0 z-50 bg-[#21575C] text-[#FFFFFF] border-b border-white/15">
+<header className="sticky top-0 z-50 bg-[#21575C] text-white border-b border-white/15">
     <div className="container-px flex items-center justify-between h-20">
         <Link href="/" className="flex items-center gap-3 shrink-0" onClick={() => setOpen(false)}>
           <Image
@@ -30,7 +30,7 @@ export default function Header() {
             priority
           />
           <span className="hidden sm:block h-8 w-px bg-white/20" />
-          <span className="hidden sm:block font-mono text-[10px] tracking-widest2 uppercase text-white">
+          <span className="hidden sm:block font-mono text-[10px] tracking-widest uppercase text-white">
             Avi Couture Pvt. Ltd.
           </span>
         </Link>
@@ -42,7 +42,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-mono text-[12px] tracking-widest2 uppercase pb-1 border-b transition-colors ${
+                className={`font-mono text-[12px] tracking-widest uppercase pb-1 border-b transition-colors ${
                   active
                     ? "border-[#FCF203] text-[#FCF203]"
                     : "border-transparent text-white hover:text-[#FCF203] hover:border-[#FCF203]"
@@ -54,7 +54,7 @@ export default function Header() {
           })}
           <Link
             href="/contact"
-            className="font-mono text-[12px] tracking-widest2 uppercase bg-brass text-white px-4 py-2 hover:bg-[#ED003F] transition-colors"
+            className="font-mono text-[12px] tracking-widest uppercase bg-brass text-white px-4 py-2 hover:bg-[#ED003F] transition-colors"
           >
             Get a Quote
           </Link>
@@ -80,7 +80,7 @@ export default function Header() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className={`block py-3 font-mono text-xs tracking-widest2 uppercase border-b border-white/15 ${
+                  className={`block py-3 font-mono text-xs tracking-widest uppercase border-b border-white/15 ${
                     pathname === item.href
                       ? "text-[#FCF203] border-[#FCF203]"
                       : "text-white hover:text-[#FCF203] hover:border-[#FCF203]"
