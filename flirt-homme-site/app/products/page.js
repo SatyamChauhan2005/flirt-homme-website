@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import SwingTag from "@/components/SwingTag";
 import Swatch from "@/components/Swatch";
 
@@ -28,9 +29,16 @@ const LINES = [
     intro:
       "Easy weaves and relaxed collars, built for wear that doesn't need to be perfectly ironed.",
     items: [
-      { name: "Linen-Blend Casual Shirt", tag: "Relaxed Fit" },
-      { name: "Denim Overshirt", tag: "Regular Fit" },
-      { name: "Checked Flannel Shirt", tag: "Relaxed Fit" },
+      {
+        name: "Safari Utility Shirt",
+        tag: "Cargo Pocket · 5 Colourways",
+        img: "/products/safari-utility-shirt.jpg",
+      },
+      {
+        name: "Contrast-Stitch Overshirt",
+        tag: "Resort Fit",
+        img: "/products/navy-overshirt.jpg",
+      },
     ],
   },
   {
@@ -40,9 +48,16 @@ const LINES = [
     intro:
       "Prints, textures and finishes for the evenings that call for a little more presence.",
     items: [
-      { name: "Printed Satin Shirt", tag: "Slim Fit" },
-      { name: "Textured Jacquard Shirt", tag: "Slim Fit" },
-      { name: "Metallic Print Shirt", tag: "Regular Fit" },
+      {
+        name: "Horse Embroidered Shirt",
+        tag: "4 Colourways",
+        img: "/products/horse-embroidered-shirt.jpg",
+      },
+      {
+        name: "Pheasant Embroidered Shirt",
+        tag: "4 Colourways",
+        img: "/products/pheasant-embroidered-shirt.jpg",
+      },
     ],
   },
 ];
@@ -93,7 +108,19 @@ export default function Products() {
                   key={item.name}
                   className={`border ${i % 2 === 0 ? "hairline" : "hairline-dark"}`}
                 >
-                  <Swatch tone={line.tone} label="Product Photo" className="aspect-[4/5]" />
+                  {item.img ? (
+                    <div className="relative aspect-[4/5] w-full overflow-hidden">
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        fill
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <Swatch tone={line.tone} label="Product Photo" className="aspect-[4/5]" />
+                  )}
                   <div className="p-5">
                     <p className="font-mono text-[10px] tracking-widest2 uppercase text-brass mb-2">
                       {item.tag}
@@ -146,4 +173,4 @@ export default function Products() {
       </section>
     </>
   );
-}
+                }
