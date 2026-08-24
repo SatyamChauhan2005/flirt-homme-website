@@ -50,13 +50,13 @@ export default function Footer() {
           </p>
           <ul className="space-y-2.5 text-sm text-white/75">
             <li>
-              <a href="mailto:mis@avicouture.com" className="hover:text-white">
+              <a href="mailto:sales@avicouture.com" className="hover:text-white">
                 mis@avicouture.com
               </a>
             </li>
             <li>
-              <a href="tel:+91 81715 24245" className="hover:text-white">
-                +91 81715 24245
+              <a href="tel:+91 82877 79400" className="hover:text-white">
+                +91 82877 79400
               </a>
             </li>
             <li className="text-white/60">
