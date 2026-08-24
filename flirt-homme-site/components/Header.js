@@ -30,7 +30,7 @@ export default function Header() {
             priority
           />
           <span className="hidden sm:block h-8 w-px bg-white/20" />
-          <span className="hidden sm:block font-mono text-[10px] tracking-widest2 uppercase text-white/60">
+          <span className="hidden sm:block font-mono text-[10px] tracking-widest2 uppercase text-white">
             Avi Couture Pvt. Ltd.
           </span>
         </Link>
