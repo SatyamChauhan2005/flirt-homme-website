@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --ink: #16233A;
-  --bone: #ECE6D8;
+  --ink: #000000;
+  --bone: #ffffff;
 }
 
 * {
@@ -17,7 +17,18 @@ html {
 
 body {
   background: var(--bone);
-  color: var(--ink);
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  color: #001048;
+}
+
+.font-display.text-brass {
+  color: #B5652D;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -34,7 +45,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #B5652D;
+  outline: 2px solid #ced904;
   outline-offset: 3px;
 }
 

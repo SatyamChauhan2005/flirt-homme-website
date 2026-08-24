@@ -44,14 +44,14 @@ const PROCESS = [
 export default function Home() {
   return (
     <>
-      <section className="relative bg-ink text-bone overflow-hidden">
+      <section className="relative bg-bone text-ink overflow-hidden">
         <div className="container-px pt-16 pb-24 md:pt-24 md:pb-32">
           <div className="flex justify-between items-start mb-16 md:mb-24">
-            <p className="font-mono text-[11px] tracking-widest2 uppercase text-bone/50">
+            <p className="font-mono text-[11px] tracking-widest2 uppercase text-ink/50">
               Avi Couture Private Limited
               <br className="hidden sm:block" /> New Delhi, India
             </p>
-            <SwingTag code="AC—MFG" label="Est. Manufacturing" tone="ink" rotate="rotate-2" className="hidden sm:inline-flex" />
+            <SwingTag code="AC—MFG" label="Est. Manufacturing" tone="bone" rotate="rotate-2" className="hidden sm:inline-flex" />
           </div>
 
           <h1 className="font-display text-[13vw] leading-[0.95] sm:text-6xl md:text-7xl lg:text-8xl sm:leading-[0.95] max-w-5xl">
@@ -60,10 +60,10 @@ export default function Home() {
             is a <em className="italic text-brass font-medium">decision.</em>
           </h1>
 
-          <p className="mt-8 md:mt-10 max-w-xl text-bone/70 text-base md:text-lg leading-relaxed">
+          <p className="mt-8 md:mt-10 max-w-xl text-black text-base md:text-lg leading-relaxed">
             FLIRT HOMME is the shirt label of Avi Couture Private Limited —
             formal, casual and party wear, cut in our New Delhi workshop and
-            manufactured at scale for retailers and private-label partners.
+            manufactured at scale for retailers &  partners.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -75,7 +75,7 @@ export default function Home() {
             </Link>
             <Link
               href="/contact"
-              className="font-mono text-[11px] tracking-widest2 uppercase border border-bone/30 px-6 py-4 hover:border-bone/70 transition-colors"
+              className="font-mono text-[11px] tracking-widest2 uppercase border border-ink/30 px-6 py-4 hover:border-ink/70 transition-colors"
             >
               Request a Bulk Quote
             </Link>
@@ -92,7 +92,7 @@ export default function Home() {
             <h2 className="font-display text-3xl md:text-4xl leading-snug max-w-md">
               A manufacturing house first. A shirt label because of it.
             </h2>
-            <p className="mt-6 text-ink/70 leading-relaxed max-w-md">
+            <p className="mt-6 text-black leading-relaxed max-w-md">
               Avi Couture Private Limited builds garments for a living —
               FLIRT HOMME is where that manufacturing discipline shows up as a
               finished shirt. Every piece that carries the tag has gone
@@ -129,11 +129,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-ink text-bone">
+      <section className="bg-bone text-ink">
         <div className="container-px py-20 md:py-28">
           <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
             <h2 className="font-display text-3xl md:text-4xl">What We Cut</h2>
-            <SwingTag code="04" label="Product Lines" tone="ink" rotate="-rotate-1" />
+            <SwingTag code="04" label="Product Lines" tone="bone" rotate="-rotate-1" />
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -141,7 +141,7 @@ export default function Home() {
               <Link
                 key={c.name}
                 href="/products"
-                className="group block border border-line-dark hover:border-brass/60 transition-colors"
+                className="group block border hairline hover:border-brass/60 transition-colors"
               >
                 {c.img ? (
                   <div className="relative aspect-[4/5] w-full overflow-hidden">
@@ -161,7 +161,7 @@ export default function Home() {
                     {c.code}
                   </p>
                   <h3 className="font-display text-xl mb-2">{c.name}</h3>
-                  <p className="text-sm text-bone/60 leading-relaxed">{c.desc}</p>
+                  <p className="text-sm text-black leading-relaxed">{c.desc}</p>
                 </div>
               </Link>
             ))}
@@ -180,17 +180,17 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-x-10 gap-y-12">
             {PROCESS.map((s) => (
-              <div key={s.n} className="border-t hairline pt-5">
+              <div key={s.n} className="border-t hairline bg-[#F3F3F3] p-5 pt-4">
                 <span className="font-mono text-3xl text-brass">{s.n}</span>
                 <h3 className="font-display text-xl mt-3 mb-2">{s.t}</h3>
-                <p className="text-sm text-ink/60 leading-relaxed">{s.d}</p>
+                <p className="text-sm text-black leading-relaxed">{s.d}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-ink text-bone">
+      <section className="bg-bone text-ink">
         <div className="container-px py-20 md:py-24 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <h2 className="font-display text-3xl md:text-4xl max-w-lg">
             Building a private label, or placing a bulk order?

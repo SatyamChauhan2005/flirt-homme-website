@@ -14,9 +14,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "FLIRT HOMME — Avi Couture Private Limited",
+  title: "FLIRT HOMME — Avi Couture Pvt. Ltd.",
   description:
-    "FLIRT HOMME is the designer shirt label of Avi Couture Private Limited, New Delhi — manufacturing formal, casual and party wear shirts for retail and bulk private-label orders.",
+    "FLIRT HOMME is the designer shirt label of Avi Couture Private Limited, Moti Nagar  New Delhi — manufacturing formal, casual and party wear shirts for retail and bulk orders.",
   keywords: [
     "FLIRT HOMME",
     "Avi Couture",

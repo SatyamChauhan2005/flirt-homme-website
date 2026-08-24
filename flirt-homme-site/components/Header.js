@@ -18,7 +18,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-ink text-bone border-b border-line-dark">
+    <header className="sticky top-0 z-50 bg-[#000530] text-white border-b border-white/15">
       <div className="container-px flex items-center justify-between h-20">
         <Link href="/" className="flex items-center gap-3 shrink-0" onClick={() => setOpen(false)}>
           <Image
@@ -29,8 +29,8 @@ export default function Header() {
             className="h-9 w-auto"
             priority
           />
-          <span className="hidden sm:block h-8 w-px bg-line-dark" />
-          <span className="hidden sm:block font-mono text-[10px] tracking-widest2 uppercase text-bone/60">
+          <span className="hidden sm:block h-8 w-px bg-white/20" />
+          <span className="hidden sm:block font-mono text-[10px] tracking-widest2 uppercase text-white/60">
             Avi Couture Pvt. Ltd.
           </span>
         </Link>
@@ -44,8 +44,8 @@ export default function Header() {
                 href={item.href}
                 className={`font-mono text-[11px] tracking-widest2 uppercase pb-1 border-b transition-colors ${
                   active
-                    ? "border-brass text-brass"
-                    : "border-transparent text-bone/80 hover:text-bone hover:border-bone/40"
+                    ? "border-[#FCF203] text-[#FCF203]"
+                    : "border-transparent text-white hover:text-[#FCF203] hover:border-[#FCF203]"
                 }`}
               >
                 {item.label}
@@ -54,7 +54,7 @@ export default function Header() {
           })}
           <Link
             href="/contact"
-            className="font-mono text-[11px] tracking-widest2 uppercase bg-brass text-ink px-4 py-2 hover:bg-brass-light transition-colors"
+            className="font-mono text-[11px] tracking-widest2 uppercase bg-brass text-white px-4 py-2 hover:bg-brass-light transition-colors"
           >
             Get a Quote
           </Link>
@@ -66,21 +66,25 @@ export default function Header() {
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
-          <span className={`block h-px w-6 bg-bone transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
-          <span className={`block h-px w-6 bg-bone transition-opacity ${open ? "opacity-0" : "opacity-100"}`} />
-          <span className={`block h-px w-6 bg-bone transition-transform ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
+          <span className={`block h-px w-6 bg-white transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
+          <span className={`block h-px w-6 bg-white transition-opacity ${open ? "opacity-0" : "opacity-100"}`} />
+          <span className={`block h-px w-6 bg-white transition-transform ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
         </button>
       </div>
 
       {open && (
-        <nav className="md:hidden border-t border-line-dark bg-ink">
+        <nav className="md:hidden border-t border-white/15 bg-[#000530]">
           <ul className="container-px py-4 flex flex-col gap-1">
             {NAV.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block py-3 font-mono text-xs tracking-widest2 uppercase text-bone/85 border-b border-line-dark"
+                  className={`block py-3 font-mono text-xs tracking-widest2 uppercase border-b border-white/15 ${
+                    pathname === item.href
+                      ? "text-[#FCF203] border-[#FCF203]"
+                      : "text-white hover:text-[#FCF203] hover:border-[#FCF203]"
+                  }`}
                 >
                   {item.label}
                 </Link>

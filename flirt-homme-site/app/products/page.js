@@ -65,7 +65,7 @@ const LINES = [
 export default function Products() {
   return (
     <>
-      <section className="bg-ink text-bone">
+      <section className="bg-bone text-ink">
         <div className="container-px py-20 md:py-28">
           <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-5">
             Products
@@ -73,7 +73,7 @@ export default function Products() {
           <h1 className="font-display text-4xl md:text-6xl max-w-3xl leading-tight">
             Four lines. One cutting floor.
           </h1>
-          <p className="mt-6 max-w-xl text-bone/70 leading-relaxed">
+          <p className="mt-6 max-w-xl text-black leading-relaxed">
             This is a working catalog — final photography and SKUs will
             replace the placeholders below. For pricing, MOQs or a custom
             specification, use the enquiry button on any piece.
@@ -82,7 +82,7 @@ export default function Products() {
       </section>
 
       {LINES.map((line, i) => (
-        <section key={line.code} className={i % 2 === 0 ? "bg-bone" : "bg-ink text-bone"}>
+        <section key={line.code} className="bg-bone text-ink">
           <div className="container-px py-16 md:py-24">
             <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
               <div>
@@ -90,7 +90,7 @@ export default function Products() {
                   {line.code}
                 </p>
                 <h2 className="font-display text-3xl md:text-4xl">{line.name}</h2>
-                <p className={`mt-3 max-w-lg text-sm leading-relaxed ${i % 2 === 0 ? "text-ink/60" : "text-bone/60"}`}>
+                <p className="mt-3 max-w-lg text-black text-sm leading-relaxed">
                   {line.intro}
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function Products() {
               {line.items.map((item) => (
                 <div
                   key={item.name}
-                  className={`border ${i % 2 === 0 ? "hairline" : "hairline-dark"}`}
+                  className="border hairline"
                 >
                   {item.img ? (
                     <div className="relative aspect-[4/5] w-full overflow-hidden">
@@ -150,12 +150,12 @@ export default function Products() {
             <h2 className="font-display text-3xl md:text-4xl mb-6 max-w-md">
               Bring us a spec sheet. We&rsquo;ll bring you the shirt.
             </h2>
-            <p className="text-ink/70 leading-relaxed mb-4 max-w-md">
+            <p className="text-black leading-relaxed mb-4 max-w-md">
               Private-label manufacturing for brands and retailers — your
               design, fabric preference and branding, produced at the volume
               you need.
             </p>
-            <ul className="space-y-2 text-sm text-ink/70 mb-8">
+            <ul className="space-y-2 text-sm text-black mb-8">
               <li>— Custom fabric sourcing</li>
               <li>— Size range &amp; grading built to your chart</li>
               <li>— Private-label tagging and packaging</li>
@@ -168,7 +168,7 @@ export default function Products() {
               Request a Bulk Quote
             </Link>
           </div>
-          <Swatch tone="ink" label="Bulk Production Photo" className="aspect-[4/5] w-full" />
+          <Swatch tone="bone" label="Bulk Production Photo" className="aspect-[4/5] w-full" />
         </div>
       </section>
     </>

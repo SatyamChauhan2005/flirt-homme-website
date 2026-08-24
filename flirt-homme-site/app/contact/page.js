@@ -9,7 +9,7 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <section className="bg-ink text-bone">
+      <section className="bg-bone text-ink">
         <div className="container-px py-20 md:py-28">
           <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-5">
             Contact
@@ -17,7 +17,7 @@ export default function Contact() {
           <h1 className="font-display text-4xl md:text-6xl max-w-2xl leading-tight">
             Let&rsquo;s talk shirts.
           </h1>
-          <p className="mt-6 max-w-lg text-bone/70 leading-relaxed">
+          <p className="mt-6 max-w-lg text-black leading-relaxed">
             Retail enquiry, private-label brief or a bulk order — send us the
             details and we&rsquo;ll get back with next steps.
           </p>
@@ -45,10 +45,10 @@ export default function Contact() {
                 Phone
               </p>
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+91 81715 24245"
                 className="font-display text-2xl hover:text-brass transition-colors"
               >
-                +91 XXXXX XXXXX
+                +91 81715 24245
               </a>
               <p className="text-xs text-ink/45 mt-1 font-mono">
                 Replace with your direct line before launch
@@ -67,7 +67,7 @@ export default function Contact() {
                 India
               </p>
               <p className="text-xs text-ink/45 mt-1 font-mono">
-                Add full street address &amp; PIN code before launch
+                25, Najafgarh Road Ind. Area, Zakhira, Moti Nagar, New Delhi,  &amp; 110015
               </p>
             </div>
 
@@ -185,7 +185,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="bg-ink">
+      <section className="bg-bone">
         <div className="w-full h-[420px] grayscale contrast-125 opacity-90">
           <iframe
             title="Avi Couture Private Limited location"
@@ -198,7 +198,7 @@ export default function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-        <p className="container-px py-4 text-xs text-bone/40 font-mono">
+        <p className="container-px py-4 text-xs text-ink/40 font-mono">
           Map centered on Moti Nagar, New Delhi — update the query in
           app/contact/page.js with your exact address for a precise pin.
         </p>

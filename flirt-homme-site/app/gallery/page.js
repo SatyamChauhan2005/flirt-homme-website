@@ -21,7 +21,7 @@ const TILES = [
 export default function Gallery() {
   return (
     <>
-      <section className="bg-ink text-bone">
+      <section className="bg-bone text-ink">
         <div className="container-px py-20 md:py-28">
           <div className="flex items-end justify-between flex-wrap gap-4">
             <div>
@@ -32,7 +32,7 @@ export default function Gallery() {
                 Inside the workshop, on the rack.
               </h1>
             </div>
-            <SwingTag code="AC" label="Photography Pending" tone="ink" rotate="-rotate-2" />
+            <SwingTag code="AC" label="Photography Pending" tone="bone" rotate="-rotate-2" />
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ export default function Swatch({ tone = "bone", label, className = "" }) {
     bone: "bg-bone-card bg-weave text-ink/50",
     ink: "bg-ink-soft bg-weave-dark text-bone/50",
     brass: "bg-[#C9A86A] bg-weave text-ink/60",
-    wine: "bg-[#7A2836] bg-weave-dark text-bone/60",
+    wine: "bg-[#BD0039] bg-weave-dark text-bone/60",
   };
 
   return (

@@ -8,12 +8,12 @@ module.exports = {
     extend: {
       colors: {
         ink: {
-          DEFAULT: "#16233A",
-          soft: "#1E304C",
+          DEFAULT: "#000000",
+          soft: "#222222",
         },
         bone: {
-          DEFAULT: "#ECE6D8",
-          card: "#F8F5EE",
+          DEFAULT: "#FFFFFF",
+          card: "#F3F3F3",
         },
         brass: {
           DEFAULT: "#B5652D",
