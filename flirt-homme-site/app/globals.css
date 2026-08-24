@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --ink: #000000;
-  --bone: #ffffff;
+  --ink: #14213D;
+  --bone: #F6F1E7;
 }
 
 * {
@@ -17,18 +17,7 @@ html {
 
 body {
   background: var(--bone);
-  color: #000000;
-}
-
-h1,
-h2,
-h3,
-.font-display {
-  color: #001048;
-}
-
-.font-display.text-brass {
-  color: #B5652D;
+  color: var(--ink);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -45,7 +34,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #ced904;
+  outline: 2px solid #C8792E;
   outline-offset: 3px;
 }
 
@@ -69,7 +58,7 @@ textarea:focus-visible {
 }
 
 .hairline {
-  border-color: #CFC6B4;
+  border-color: #D8CDB8;
 }
 
 .hairline-dark {

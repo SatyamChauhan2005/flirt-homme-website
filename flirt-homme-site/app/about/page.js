@@ -1,5 +1,5 @@
 import SwingTag from "@/components/SwingTag";
-import Swatch from "@/components/Swatch";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -29,7 +29,7 @@ const VALUES = [
 export default function About() {
   return (
     <>
-      <section className="bg-bone text-ink">
+      <section className="bg-ink text-bone">
         <div className="container-px py-20 md:py-28">
           <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-5">
             About Us
@@ -42,24 +42,32 @@ export default function About() {
 
       <section className="bg-bone">
         <div className="container-px py-20 md:py-28 grid md:grid-cols-[1fr_1fr] gap-14 items-start">
-          <Swatch tone="brass" label="Workshop Photo" className="aspect-[4/5] w-full" />
+          <div className="relative aspect-[4/5] w-full overflow-hidden">
+            <Image
+              src="/products/workshop-rack.jpg"
+              alt="FLIRT HOMME workshop rack"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
 
           <div>
-            <h2 className="font-display text-3xl mb-6">Who We Are</h2>
-            <p className="text-black leading-relaxed mb-5">
+            <h2 className="font-display text-3xl mb-6 text-ink">Who We Are</h2>
+            <p className="text-ink/70 leading-relaxed mb-5">
               Avi Couture Private Limited is a garment manufacturing company
               based in Moti Nagar, New Delhi. We build shirts — formal,
               casual and party wear — for retail shelves and for brands that
               need a manufacturing partner they can hand a spec sheet to and
               trust.
             </p>
-            <p className="text-black leading-relaxed mb-5">
+            <p className="text-ink/70 leading-relaxed mb-5">
               FLIRT HOMME is our own shirt label, and the clearest example of
               what we do: fabric sourced with intent, patterns cut precisely,
               and a finish that holds up whether the shirt is going to a
               single customer or a chain of stores.
             </p>
-            <p className="text-black leading-relaxed">
+            <p className="text-ink/70 leading-relaxed">
               We also manufacture on a private-label and bulk basis — your
               design, your brand, our cutting floor and stitching line.
             </p>
@@ -74,13 +82,13 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-bone text-ink">
+      <section className="bg-ink text-bone">
         <div className="container-px py-20 md:py-28">
           <div className="flex items-end justify-between mb-14 flex-wrap gap-4">
             <h2 className="font-display text-3xl md:text-4xl">
               What We Stand On
             </h2>
-            <SwingTag code="AC" label="Manufacturing Values" tone="bone" rotate="rotate-1" />
+            <SwingTag code="AC" label="Manufacturing Values" tone="ink" rotate="rotate-1" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -88,7 +96,7 @@ export default function About() {
               <div key={v.code} className="border-t hairline-dark pt-6">
                 <span className="font-mono text-xs tracking-widest2 text-brass">{v.code}</span>
                 <h3 className="font-display text-xl mt-3 mb-2">{v.t}</h3>
-                <p className="text-sm text-black leading-relaxed">{v.d}</p>
+                <p className="text-sm text-bone/60 leading-relaxed">{v.d}</p>
               </div>
             ))}
           </div>
@@ -101,14 +109,14 @@ export default function About() {
             <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-3">
               Location
             </p>
-            <p className="font-display text-2xl mb-2">New Delhi, India</p>
+            <p className="font-display text-2xl mb-2 text-ink">New Delhi, India</p>
             <p className="text-ink/60 text-sm">Moti Nagar — full address on our Contact page.</p>
           </div>
           <div className="border hairline p-8">
             <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-3">
               What We Manufacture
             </p>
-            <p className="font-display text-2xl mb-2">Formal · Casual · Party · Custom</p>
+            <p className="font-display text-2xl mb-2 text-ink">Formal · Casual · Party · Custom</p>
             <p className="text-ink/60 text-sm">Retail-ready pieces and bulk private-label orders.</p>
           </div>
         </div>

@@ -14,18 +14,32 @@ const LINES = [
     code: "F/01",
     name: "Formal",
     tone: "bone",
+    dark: false,
     intro:
       "Structured shirting for the workday — clean collars, tailored blocks, fabrics chosen to hold their press.",
     items: [
-      { name: "Classic Oxford Shirt", tag: "Slim Fit" },
-      { name: "Twill Formal Shirt", tag: "Regular Fit" },
-      { name: "Striped Business Shirt", tag: "Slim Fit" },
+      {
+        name: "Classic Navy Dress Shirt",
+        tag: "Slim Fit · Striped Placket",
+        img: "/products/navy-dress-shirt.jpg",
+      },
+      {
+        name: "Mauve Jacquard Shirt",
+        tag: "Regular Fit · Textured Weave",
+        img: "/products/mauve-jacquard-shirt.jpg",
+      },
+      {
+        name: "Blush Leaf Jacquard Shirt",
+        tag: "Regular Fit · Tonal Print",
+        img: "/products/blush-jacquard-shirt.jpg",
+      },
     ],
   },
   {
     code: "F/02",
     name: "Casual",
     tone: "brass",
+    dark: true,
     intro:
       "Easy weaves and relaxed collars, built for wear that doesn't need to be perfectly ironed.",
     items: [
@@ -33,6 +47,11 @@ const LINES = [
         name: "Safari Utility Shirt",
         tag: "Cargo Pocket · 5 Colourways",
         img: "/products/safari-utility-shirt.jpg",
+      },
+      {
+        name: "Suede-Trim Utility Shirt",
+        tag: "Contrast Collar · White & Brown",
+        img: "/products/suede-trim-utility-shirt.jpg",
       },
       {
         name: "Contrast-Stitch Overshirt",
@@ -45,6 +64,7 @@ const LINES = [
     code: "F/03",
     name: "Party Wear",
     tone: "wine",
+    dark: false,
     intro:
       "Prints, textures and finishes for the evenings that call for a little more presence.",
     items: [
@@ -58,6 +78,21 @@ const LINES = [
         tag: "4 Colourways",
         img: "/products/pheasant-embroidered-shirt.jpg",
       },
+      {
+        name: "Wine Beaded Embroidered Shirt",
+        tag: "Hand-Beaded Panel",
+        img: "/products/wine-beaded-embroidered-shirt.jpg",
+      },
+      {
+        name: "Coffee Brooch Embroidered Shirt",
+        tag: "Crystal Brooch Motif",
+        img: "/products/coffee-brooch-embroidered-shirt.jpg",
+      },
+      {
+        name: "Cream Floral Embroidered Shirt",
+        tag: "Linen-Blend · Beaded Floral",
+        img: "/products/cream-floral-embroidered-shirt.jpg",
+      },
     ],
   },
 ];
@@ -65,7 +100,7 @@ const LINES = [
 export default function Products() {
   return (
     <>
-      <section className="bg-bone text-ink">
+      <section className="bg-ink text-bone">
         <div className="container-px py-20 md:py-28">
           <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-5">
             Products
@@ -73,32 +108,38 @@ export default function Products() {
           <h1 className="font-display text-4xl md:text-6xl max-w-3xl leading-tight">
             Four lines. One cutting floor.
           </h1>
-          <p className="mt-6 max-w-xl text-black leading-relaxed">
-            This is a working catalog — final photography and SKUs will
-            replace the placeholders below. For pricing, MOQs or a custom
-            specification, use the enquiry button on any piece.
+          <p className="mt-6 max-w-xl text-bone/70 leading-relaxed">
+            Real pieces from our current collection. For pricing, MOQs or a
+            custom specification, use the enquiry button on any piece.
           </p>
         </div>
       </section>
 
-      {LINES.map((line, i) => (
-        <section key={line.code} className="bg-bone text-ink">
+      {LINES.map((line) => (
+        <section
+          key={line.code}
+          className={line.dark ? "bg-ink text-bone" : "bg-bone text-ink"}
+        >
           <div className="container-px py-16 md:py-24">
             <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
               <div>
-                <p className={`font-mono text-[11px] tracking-widest2 uppercase mb-3 ${i % 2 === 0 ? "text-brass" : "text-brass"}`}>
+                <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-3">
                   {line.code}
                 </p>
                 <h2 className="font-display text-3xl md:text-4xl">{line.name}</h2>
-                <p className="mt-3 max-w-lg text-black text-sm leading-relaxed">
+                <p
+                  className={`mt-3 max-w-lg text-sm leading-relaxed ${
+                    line.dark ? "text-bone/60" : "text-ink/60"
+                  }`}
+                >
                   {line.intro}
                 </p>
               </div>
               <SwingTag
                 code={line.code}
                 label={line.name}
-                tone={i % 2 === 0 ? "bone" : "ink"}
-                rotate={i % 2 === 0 ? "-rotate-2" : "rotate-2"}
+                tone={line.dark ? "bone" : "ink"}
+                rotate={line.dark ? "rotate-2" : "-rotate-2"}
               />
             </div>
 
@@ -106,7 +147,9 @@ export default function Products() {
               {line.items.map((item) => (
                 <div
                   key={item.name}
-                  className="border hairline"
+                  className={`group border ${
+                    line.dark ? "hairline-dark" : "hairline"
+                  } hover:border-brass transition-colors overflow-hidden`}
                 >
                   {item.img ? (
                     <div className="relative aspect-[4/5] w-full overflow-hidden">
@@ -115,7 +158,7 @@ export default function Products() {
                         alt={item.name}
                         fill
                         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        className="object-cover"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
                   ) : (
@@ -141,7 +184,7 @@ export default function Products() {
       ))}
 
       {/* Custom & Bulk */}
-      <section className="bg-bone">
+      <section className="bg-ink text-bone">
         <div className="container-px py-20 md:py-28 grid md:grid-cols-[1fr_1fr] gap-14 items-center">
           <div>
             <p className="font-mono text-[11px] tracking-widest2 uppercase text-brass mb-5">
@@ -150,12 +193,12 @@ export default function Products() {
             <h2 className="font-display text-3xl md:text-4xl mb-6 max-w-md">
               Bring us a spec sheet. We&rsquo;ll bring you the shirt.
             </h2>
-            <p className="text-black leading-relaxed mb-4 max-w-md">
+            <p className="text-bone/70 leading-relaxed mb-4 max-w-md">
               Private-label manufacturing for brands and retailers — your
               design, fabric preference and branding, produced at the volume
               you need.
             </p>
-            <ul className="space-y-2 text-sm text-black mb-8">
+            <ul className="space-y-2 text-sm text-bone/70 mb-8">
               <li>— Custom fabric sourcing</li>
               <li>— Size range &amp; grading built to your chart</li>
               <li>— Private-label tagging and packaging</li>
@@ -163,14 +206,22 @@ export default function Products() {
             </ul>
             <Link
               href="/contact"
-              className="inline-block font-mono text-[11px] tracking-widest2 uppercase bg-ink text-bone px-6 py-4 hover:bg-ink-soft transition-colors"
+              className="inline-block font-mono text-[11px] tracking-widest2 uppercase bg-brass text-ink px-6 py-4 hover:bg-brass-light transition-colors"
             >
               Request a Bulk Quote
             </Link>
           </div>
-          <Swatch tone="bone" label="Bulk Production Photo" className="aspect-[4/5] w-full" />
+          <div className="relative aspect-[4/5] w-full overflow-hidden">
+            <Image
+              src="/products/workshop-rack.jpg"
+              alt="FLIRT HOMME production rack"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
     </>
   );
-                }
+}
