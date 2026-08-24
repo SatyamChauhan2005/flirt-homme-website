@@ -126,3 +126,19 @@ textarea:focus-visible {
 .third-section {
   color: #420057 !important;
 }
+
+/* Override specific text colors inside bone-background sections */
+.bg-bone .text-bone\/70 {
+  color: #000000 !important;
+  opacity: 0.7;
+}
+
+.bg-bone .text-bone\/60 {
+  color: #000000 !important;
+  opacity: 0.6;
+}
+
+.bg-bone .text-ink\/50 {
+  color: #000000 !important;
+  opacity: 0.5;
+}
