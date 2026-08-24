@@ -84,20 +84,20 @@ textarea:focus-visible {
 
 .bg-bone,
 .bg-bone-card {
-  background-color: var(--bone) !important;
-  color: #000000 !important; /* default text color inside bone sections */
+  background-color: var(--bone) ;
+  color: #000000 ; /* default text color inside bone sections */
 }
 
 /* Headings (display font / h1) inside bone sections */
 .bg-bone h1,
 .bg-bone .font-display {
-  color: #0C5961 !important;
+  color: #0C5961 ;
 }
 
 /* The word "decision." in the hero uses text-brass — override it */
 .bg-bone em,
 .bg-bone .text-brass {
-  color: #EB002A !important;
+  color: #EB002A ;
 }
 
 /* Force other commonly used text utilities to be black inside bone areas */
@@ -110,35 +110,35 @@ textarea:focus-visible {
 .bg-bone .text-ink,
 .bg-bone .text-bone,
 .bg-bone .text-white {
-  color: #000000 !important;
+  color: #000000 ;
 }
 
 /* Make sure small metadata / mono labels are readable */
 .bg-bone .font-mono.text-[11px],
 .bg-bone .font-mono.text-xs,
 .bg-bone .font-mono.text-[10px] {
-  color: #000000 !important;
+  color: #000000 ;
 }
 
 /*
   New: third-section — target the third container (category grid) text color
 */
 .third-section {
-  color: #420057 !important;
+  color: #420057 ;
 }
 
 /* Override specific text colors inside bone-background sections */
 .bg-bone .text-bone\/70 {
-  color: #000000 !important;
+  color: #000000 ;
   opacity: 0.7;
 }
 
 .bg-bone .text-bone\/60 {
-  color: #000000 !important;
+  color: #000000 ;
   opacity: 0.6;
 }
 
 .bg-bone .text-ink\/50 {
-  color: #000000 !important;
+  color: #000000 ;
   opacity: 0.5;
 }
