@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative bg-ink text-bone overflow-hidden">
+      <section className="relative bg-bone overflow-hidden">
         <div className="container-px pt-16 pb-24 md:pt-24 md:pb-32">
           <div className="flex justify-between items-start mb-16 md:mb-24">
             <p className="font-mono text-[11px] tracking-widest2 uppercase text-bone/50">

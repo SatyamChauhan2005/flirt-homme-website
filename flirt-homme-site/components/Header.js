@@ -18,7 +18,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-<header className="sticky top-0 z-50 bg-gradient-to-r from-[#615D15] to-[#666308] text-white border-b border-white/15">
+<header className="sticky top-0 z-50 bg-[#21575C] text-white border-b border-white/15">
     <div className="container-px flex items-center justify-between h-20">
         <Link href="/" className="flex items-center gap-3 shrink-0" onClick={() => setOpen(false)}>
           <Image
@@ -73,7 +73,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="md:hidden border-t border-white/15 bg-[#000530]">
+        <nav className="md:hidden border-t border-white/15 bg-[#21575C]">
           <ul className="container-px py-4 flex flex-col gap-1">
             {NAV.map((item) => (
               <li key={item.href}>
