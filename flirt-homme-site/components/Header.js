@@ -54,7 +54,7 @@ export default function Header() {
           })}
           <Link
             href="/contact"
-            className="font-mono text-[12px] tracking-widest2 uppercase bg-brass text-white px-4 py-2 hover:bg-brass-light transition-colors"
+            className="font-mono text-[12px] tracking-widest2 uppercase bg-brass text-white px-4 py-2 hover:bg-[#ED003F] transition-colors"
           >
             Get a Quote
           </Link>
