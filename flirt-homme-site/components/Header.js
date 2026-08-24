@@ -18,8 +18,8 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-[#000530] text-white border-b border-white/15">
-      <div className="container-px flex items-center justify-between h-20">
+<header className="sticky top-0 z-50 bg-gradient-to-r from-[#615D15] to-[#666308] text-white border-b border-white/15">
+    <div className="container-px flex items-center justify-between h-20">
         <Link href="/" className="flex items-center gap-3 shrink-0" onClick={() => setOpen(false)}>
           <Image
             src="/flirt-logo.png"
@@ -42,7 +42,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-mono text-[11px] tracking-widest2 uppercase pb-1 border-b transition-colors ${
+                className={`font-mono text-[12px] tracking-widest2 uppercase pb-1 border-b transition-colors ${
                   active
                     ? "border-[#FCF203] text-[#FCF203]"
                     : "border-transparent text-white hover:text-[#FCF203] hover:border-[#FCF203]"
@@ -54,7 +54,7 @@ export default function Header() {
           })}
           <Link
             href="/contact"
-            className="font-mono text-[11px] tracking-widest2 uppercase bg-brass text-white px-4 py-2 hover:bg-brass-light transition-colors"
+            className="font-mono text-[12px] tracking-widest2 uppercase bg-brass text-white px-4 py-2 hover:bg-brass-light transition-colors"
           >
             Get a Quote
           </Link>
