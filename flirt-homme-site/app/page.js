@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import SwingTag from "@/components/SwingTag";
 import Swatch from "@/components/Swatch";
 
@@ -14,12 +15,14 @@ const CATEGORIES = [
     name: "Casual",
     desc: "Relaxed weaves and easy collars for everyday wear, off the clock.",
     tone: "brass",
+    img: "/products/safari-utility-shirt.jpg",
   },
   {
     code: "F/03",
     name: "Party Wear",
     desc: "Statement prints and finishes for evenings that call for more.",
     tone: "wine",
+    img: "/products/horse-embroidered-shirt.jpg",
   },
   {
     code: "F/04",
@@ -140,7 +143,19 @@ export default function Home() {
                 href="/products"
                 className="group block border border-line-dark hover:border-brass/60 transition-colors"
               >
-                <Swatch tone={c.tone} label="Product Photo" className="aspect-[4/5]" />
+                {c.img ? (
+                  <div className="relative aspect-[4/5] w-full overflow-hidden">
+                    <Image
+                      src={c.img}
+                      alt={c.name}
+                      fill
+                      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ) : (
+                  <Swatch tone={c.tone} label="Product Photo" className="aspect-[4/5]" />
+                )}
                 <div className="p-5">
                   <p className="font-mono text-[10px] tracking-widest2 uppercase text-brass mb-2">
                     {c.code}
@@ -190,4 +205,5 @@ export default function Home() {
       </section>
     </>
   );
-}
+                }
+                  
