@@ -50,7 +50,7 @@ export default function Home() {
       <section className="relative bg-bone hero-legacy overflow-hidden">
         <div className="container-px pt-8 pb-12 sm:pt-12 md:pt-16 lg:pt-24 md:pb-24 lg:pb-32">
           <div className="flex justify-between items-start mb-6 sm:mb-10 md:mb-16 lg:mb-24 flex-col sm:flex-row gap-4">
-            <p className="font-mono text-[9px] sm:text-[10px] md:text-[11px] tracking-widest2 uppercase text-white">
+            <p className="font-mono text-[9px] sm:text-[10px] md:text-[11px] tracking-widest2 uppercase text-[#FFFFFF]">
               Avi Couture Private Limited
               <br className="hidden sm:block" /> New Delhi, India
             </p>
