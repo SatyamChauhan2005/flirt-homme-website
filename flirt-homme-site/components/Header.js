@@ -18,9 +18,13 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-<header className="sticky top-0 z-50 bg-[#21575C] text-white border-b border-white/15">
-    <div className="container-px flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-3 shrink-0" onClick={() => setOpen(false)}>
+    <header className="sticky top-0 z-50 bg-[#21575C] text-white border-b border-white/15">
+      <div className="container-px flex items-center justify-between h-20">
+        <Link
+          href="/"
+          className="flex items-center gap-3 shrink-0"
+          onClick={() => setOpen(false)}
+        >
           <Image
             src="/flirt-logo.png"
             alt="FLIRT HOMME"
@@ -42,10 +46,8 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-mono text-[12px] tracking-widest uppercase pb-1 border-b transition-colors ${
-                  active
-                    ? "border-[#FCF203] text-[#FCF203]"
-                    : "border-transparent text-white hover:text-[#FCF203] hover:border-[#FCF203]"
+                className={`font-mono text-[12px] tracking-widest uppercase pb-1 border-b transition-colors text-white ${
+                  active ? "border-white" : "border-transparent hover:border-white"
                 }`}
               >
                 {item.label}
@@ -66,9 +68,21 @@ export default function Header() {
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
-          <span className={`block h-px w-6 bg-white transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
-          <span className={`block h-px w-6 bg-white transition-opacity ${open ? "opacity-0" : "opacity-100"}`} />
-          <span className={`block h-px w-6 bg-white transition-transform ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
+          <span
+            className={`block h-px w-6 bg-white transition-transform ${
+              open ? "translate-y-[7px] rotate-45" : ""
+            }`}
+          />
+          <span
+            className={`block h-px w-6 bg-white transition-opacity ${
+              open ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          <span
+            className={`block h-px w-6 bg-white transition-transform ${
+              open ? "-translate-y-[7px] -rotate-45" : ""
+            }`}
+          />
         </button>
       </div>
 
@@ -80,10 +94,8 @@ export default function Header() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className={`block py-3 font-mono text-xs tracking-widest uppercase border-b border-white/15 ${
-                    pathname === item.href
-                      ? "text-[#FCF203] border-[#FCF203]"
-                      : "text-white hover:text-[#FCF203] hover:border-[#FCF203]"
+                  className={`block py-3 font-mono text-xs tracking-widest uppercase border-b border-white/15 text-white ${
+                    pathname === item.href ? "border-white" : "border-white/15"
                   }`}
                 >
                   {item.label}
