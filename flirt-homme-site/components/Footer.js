@@ -13,19 +13,16 @@ export default function Footer() {
             height={50}
             className="h-9 w-auto mb-5"
           />
-          {/* MARK: Important brand description text */}
           <p className="text-white text-sm leading-relaxed max-w-xs font-semibold">
-            The designer shirt label of Avi Couture Private Limited —
-            manufactured in New Delhi, worn everywhere.
+            The designer shirt label of Avi Couture Private Limited — manufactured in New Delhi, worn everywhere.
           </p>
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-brass mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-white mb-4">
             Navigate
           </p>
           <ul className="space-y-2.5 text-sm">
-            {/* MARK: Important navigation links */}
             <li><Link href="/" className="text-white hover:text-[#FCF203] transition-colors">Home</Link></li>
             <li><Link href="/about" className="text-white hover:text-[#FCF203] transition-colors">About</Link></li>
             <li><Link href="/products" className="text-white hover:text-[#FCF203] transition-colors">Products</Link></li>
@@ -35,11 +32,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-brass mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-white mb-4">
             Lines
           </p>
           <ul className="space-y-2.5 text-sm">
-            {/* MARK: Important product lines */}
             <li className="text-white font-medium">Formal Shirts</li>
             <li className="text-white font-medium">Casual Shirts</li>
             <li className="text-white font-medium">Party Wear</li>
@@ -48,33 +44,16 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-brass mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-white mb-4">
             Reach Us
           </p>
           <ul className="space-y-2.5 text-sm">
-            {/* MARK: Important contact information */}
             <li>
-              <a href="mailto:sales@avicouture.com" className="text-white hover:text-[#FCF203] transition-colors font-medium">
+              <a href="mailto:mis@avicouture.com" className="text-white hover:text-[#FCF203] transition-colors font-medium">
                 mis@avicouture.com
               </a>
             </li>
-            <li>
-              <a href="tel:+91 82877 79400" className="text-white hover:text-[#FCF203] transition-colors font-medium">
-                +91 82877 79400
-              </a>
-            </li>
-            <li className="text-white font-medium">
-              25, Najafgarh Road Ind. Area, Zakhira, Moti Nagar, New Delhi,  &amp; 110015
-            </li>
           </ul>
-        </div>
-      </div>
-
-      <div className="border-t border-white/15">
-        <div className="container-px py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-mono tracking-widest uppercase text-white font-semibold">
-          {/* MARK: Important copyright and branding */}
-          <span>&copy; {new Date().getFullYear()} Avi Couture Private Limited</span>
-          <span>FLIRT HOMME — Designed &amp; Manufactured in Delhi, India</span>
         </div>
       </div>
     </footer>
