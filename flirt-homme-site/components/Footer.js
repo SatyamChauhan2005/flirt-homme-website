@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-white/80 mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase mb-4" style={{ color: "white" }}>
             Navigate
           </p>
           <ul className="space-y-2.5 text-sm">
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-white/80 mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase mb-4" style={{ color: "white" }}>
             Lines
           </p>
           <ul className="space-y-2.5 text-sm">
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-white/80 mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase mb-4" style={{ color: "white" }}>
             Reach Us
           </p>
           <ul className="space-y-2.5 text-sm">
