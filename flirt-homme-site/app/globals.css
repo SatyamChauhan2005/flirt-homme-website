@@ -142,3 +142,12 @@ textarea:focus-visible {
   color: #000000 ;
   opacity: 0.5;
 }
+
+/* Footer section headings - ensure white text */
+footer .font-mono {
+  color: white !important;
+}
+
+footer p.font-mono {
+  color: white !important;
+}
