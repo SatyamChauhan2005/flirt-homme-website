@@ -96,7 +96,7 @@ export default function Home() {
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl leading-snug max-w-md text-ink mb-4 sm:mb-6">
               A manufacturing house first. A shirt label because of it.
             </h2>
-            <p className="text-sm sm:text-base leading-relaxed max-w-md mb-4 sm:mb-6" style={{color: "#000000"}}>
+            <p className="text-sm sm:text-base leading-relaxed max-w-md mb-4 sm:mb-6" style={{color: "#410042"}}>
               Avi Couture Private Limited builds garments for a living —
               FLIRT HOMME is where that manufacturing discipline shows up as a
               finished shirt. Every piece that carries the tag has gone
