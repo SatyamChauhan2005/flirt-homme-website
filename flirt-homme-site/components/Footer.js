@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-white mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-white/80 mb-4">
             Navigate
           </p>
           <ul className="space-y-2.5 text-sm">
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-white mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-white/80 mb-4">
             Lines
           </p>
           <ul className="space-y-2.5 text-sm">
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-mono text-[11px] tracking-widest uppercase text-white mb-4">
+          <p className="font-mono text-[11px] tracking-widest uppercase text-white/80 mb-4">
             Reach Us
           </p>
           <ul className="space-y-2.5 text-sm">
