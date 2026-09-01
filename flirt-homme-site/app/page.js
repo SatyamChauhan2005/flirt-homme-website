@@ -162,7 +162,7 @@ export default function Home() {
                   <Swatch tone={c.tone} label="Product Photo" className="aspect-[4/5]" />
                 )}
                 <div className="p-3 sm:p-4 md:p-5">
-                  <p className="font-mono text-[9px] sm:text-[10px] tracking-widest2 uppercase text-brass mb-2">
+                  <p className="font-mono text-[9px] sm:text-[10px] tracking-widest2 uppercase text-white mb-2">
                     {c.code}
                   </p>
                   <h3 className="font-display text-lg sm:text-xl mb-2">{c.name}</h3>
