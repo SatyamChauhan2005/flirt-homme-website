@@ -18,7 +18,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-[#21575C] text-white border-b border-white/15">
+    <header className="sticky top-0 z-50 bg-[#21575C] border-b border-white/15">
       <div className="container-px flex items-center justify-between h-20">
         <Link
           href="/"
@@ -94,7 +94,7 @@ export default function Header() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className={`block py-3 font-mono text-xs tracking-widest uppercase border-b border-white/15 text-white ${
+                  className={`block py-3 font-mono text-xs tracking-widest uppercase border-b text-white ${
                     pathname === item.href ? "border-white" : "border-white/15"
                   }`}
                 >
