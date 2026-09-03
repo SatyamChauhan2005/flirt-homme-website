@@ -21,7 +21,7 @@ const LINES = [
       {
         name: "Classic Navy Dress Shirt",
         tag: "Slim Fit · Striped Placket",
-        img: "/products/navy-dress-shirt.jpg",
+        img: "/products/safari-utility-shirt.jpg",
       },
       {
         name: "Mauve Jacquard Shirt",
