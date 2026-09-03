@@ -9,7 +9,7 @@ const CATEGORIES = [
     name: "Formal",
     desc: "Crisp, structured shirting built for boardrooms and black oxford shoes.",
     tone: "bone",
-    img: "/products/navy-dress-shirt.jpg",
+    img: "/products/safari-utility-shirt.jpg",
   },
   {
     code: "F/02",
