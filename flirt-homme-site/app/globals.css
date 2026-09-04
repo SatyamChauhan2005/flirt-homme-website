@@ -102,7 +102,6 @@ textarea:focus-visible {
 
 /* Force other commonly used text utilities to be black inside bone areas */
 .bg-bone p,
-.bg-bone span,
 .bg-bone a,
 .bg-bone li,
 .bg-bone label,
@@ -111,6 +110,11 @@ textarea:focus-visible {
 .bg-bone .text-bone,
 .bg-bone .text-white {
   color: #000000 ;
+}
+
+.bg-bone span {
+  color: #ffffff
+  
 }
 
 /* Make sure small metadata / mono labels are readable */
