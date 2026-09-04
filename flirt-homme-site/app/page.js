@@ -165,7 +165,7 @@ export default function Home() {
                   <p className="font-mono text-[9px] sm:text-[10px] tracking-widest2 uppercase text-white mb-2">
                     {c.code}
                   </p>
-                  <h3 className="font-display text-lg sm:text-xl mb-2">{c.name}</h3>
+                  <h3 className="font-display text-white sm:text-xl mb-2">{c.name}</h3>
                   <p className="text-xs sm:text-sm text-bone/60 leading-relaxed">{c.desc}</p>
                 </div>
               </Link>
