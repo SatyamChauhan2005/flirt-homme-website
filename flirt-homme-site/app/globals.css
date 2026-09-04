@@ -118,7 +118,11 @@ textarea:focus-visible {
 }
 
 /* Make sure small metadata / mono labels are readable */
-.bg-bone .font-mono.text-[11px],
+.bg-bone .font-mono.text-[11px]{
+
+  color: #ffffff;
+
+}
 .bg-bone .font-mono.text-xs,
 .bg-bone .font-mono.text-[10px] {
   color: #000000 ;
